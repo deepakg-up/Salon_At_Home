@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Salon at home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Components/style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html"><img src="../assets/logo.webp" alt="mannubhai"></a> 
+                </div>
+                <h2 class="nav-header">Checkout</h2>
+            </div>
+        </nav>
+
+        <section class="cart-page">
+            <div class="contact-section cart-page-tab">
+                <div class="cart-login-tab">
+                    <h4>Account</h4>
+                    <p>To book service please Login or Signup.</p>
+                    <a href="#" id="login" class="btn btn-primary">Login</a>
+                </div>
+
+                <div class="after-login">
+                    <div class="after-login-details">
+                        <div class="details detail1">
+                            <div class="detail-container">
+                                <div class="detail-content">
+                                    <div class="detail-icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="detail1-container-content">
+                                        <h6 class="login-address-heading">Send booking details to </h6>
+                                        <p class="verify-number">+91 6393643802</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details detail2">
+                            <div class="detail-container">
+                                <div class="detail-content">
+                                    <div class="detail-icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="detail1-container-content">
+                                        <h6 class="login-address-heading">Address </h6>
+                                        <p class="userAddress"></p>
+                                    </div>
+                                </div>
+                                <button class="select-address btn btn-primary">Select Address</button>
+                            </div>
+                        </div>
+                        <div class="details detail3">
+                            <div class="detail-container">
+                                <div class="detail-content">
+                                    <div class="detail-icon">
+                                        <i class="fa-solid fa-clock"></i>
+                                    </div>
+                                    <div class="detail1-container-content">
+                                        <h6 class="login-address-heading">Slot </h6>
+                                        <p class="timeSlot"></p>
+                                    </div>
+                                </div>
+                                <button class="select-slot btn btn-primary">Select time & date</button>
+                            </div>
+                        </div>
+                        <div class="details detail4">
+                            <div class="detail-container">
+                                <div class="detail-content">
+                                    <div class="detail-icon">
+                                        <i class="fa-solid fa-credit-card"></i>
+                                    </div>
+                                    <div class="detail1-container-content">
+                                        <h6 class="login-address-heading">Payment </h6>
+                                    </div>
+                                </div>
+                                <button class="select-payment btn btn-primary">Proceed to pay</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="after-login-content">
+                        <h5>Cancellation policy</h5>
+                        <p>Free cancellations if done more than 12 hrs before the service or if a professional isn’t assigned. A fee will be charged otherwise.</p>
+                        <a href="https://www.mannubhai.com/privacy-policy"><h6>Read Full Privacy</h6></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cart-section cart-page-tab">
+                <div class="cart-item main-cart">
+                    <h5 class="cart-heading text-left">Cart</h5>
+
+                    <div class="cart-details">
+                        <!-- <div class="cart-detail">
+                            <h6 class="cart-detail-heading">Complete Chocolate natural package</h6>
+                            <div class="cart-detail-quantity">
+                                <span id="decrement">-</span>
+                                <span class="number">${cartItem.quantity}</span>
+                                <span id="increment">+</span>
+                            </div>
+                            <p class="cart-detail-price text-center">400</p>
+                            <p class="cart-detail-description">kjfnkjdsfjdshfkjhd</p>
+                        </div> -->
+                        
+                    </div>
+
+                    <div class="cart-total-price">
+                        <a href="#">
+                            <div class="cart-total-heading">Checkout</div>
+                            <div class="cart-total-rupees"> 00</div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="login-popup" id="loginPopup">
+            <div class="login-container">
+                <div class="step step1">
+                    <div class="login-main-container">
+                        <div class="login-cancle-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="login-box">
+                            <div class="call-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="login-text">
+                                <h2>Enter your phone number</h2>
+                                <p class="px-5">We'll send you a text with a verification code</p>
+                            </div>
+                            <div class="login-number">
+                                <div class="login-inputs">
+                                    <span>+91 <i class="fa-solid fa-angle-down"></i></span> 
+                                    <input type="number" placeholder="Enter your phone number">
+                                </div>
+                            </div>
+                            <div class="login-btn">
+                                <button class="btn btn-primary continue-btn" disabled>Continue</button>
+                            </div>
+                            <div class="login-terms">
+                                <p>By continuing, you agree to our <a href="#">T&C</a> and <a href="#">Privacy</a> 0policy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="step step2">
+                    <div class="login-main-container">
+                        <div class="login-cancle-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="login-box">
+                            <div class="call-icon">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </div>
+                            <div class="call-icon">
+                                <svg width="100%" height="100%" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g clip-path="url(#ic_U_verify_svg__clip0_917_55950)"><rect width="48" height="48" rx="4" fill="url(#ic_U_verify_svg__pattern0_917_55950)"></rect></g><defs><clipPath id="ic_U_verify_svg__clip0_917_55950"><rect width="48" height="48" rx="4" fill="#fff"></rect></clipPath><pattern id="ic_U_verify_svg__pattern0_917_55950" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#ic_U_verify_svg__image0_917_55950" transform="scale(.00167)"></use></pattern><image id="ic_U_verify_svg__image0_917_55950" width="600" height="600" xlink:href="data:image/png;base64,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CSwAgDCBBQAQJrAAAMIEFgBAmMACAAgTWAAAYQILACBMYAEAhAksAIAwgQUAECawAADCBBYAQJjAAgAIE1gAAGECCwAgTGABAIQJLACAMIEFABAmsAAAwgQWAECYwAIACBNYAABhAgsAIExgAQCECSygAZAlsAAAwgQWAECYwAIACBNYAABhAgsAIExgAQCECSwAgDCBBQAQJrAAAMIEFgBAmMACAAgTWAAAYQILACBMYAEAhAksAIAwgQUAECawAADCBBYAQJjAAgAIE1gAAGECCwAgTGABAIQJLACAMIEFABAmsAAAwgQWAECYwAIACBNYAABhAgsAIExgAQCECSwAgDCBBQAQJrAAAMIEFgBAmMACAAgTWAAAYQILACBMYAEAhAksAIAwgQUAECawAADCBBYAQJjAAgAIE1gAAGECCwAgTGABAIQJLACAMIEFABAmsAAAwgQWAECYwAIACBNYAABhAgsAIExgAQCECSwAgDCBBQAQJrAAAMIEFgBAmMACAAgTWAAAYQILACBMYAEAhAksAIAwgQUAECawAADCBBYAQJjAAgAIE1gAAGECCwAgTGABAIQJLACAMIEFABAmsAAAwgQWAECYwAIACBNYAABhAgsAIExgAQCECSwAgDCBBQAQJrAAAMIEFgBAmMACAAgTWAAAYQILACBMYAEAhAksAIAwgQUAECawAADCBBYAQJjAAgAIE1gAAGECCwAgTGABAIQJLACAMIEFABAmsAAAwgQWAECYwAIACBNYAABhAgsAIExgAQCECSwAgDCBBQAQJrAAAMIEFgBAmMACAAgTWAAAYQILACBMYAEAhAksAIAwgQUAECawAADCBBYAQJjAAgAIE1gAAGECCwAgTGABAIQJLACAMIEFABAmsAAAwgQWAECYwAIACBNYAABhAgsAIExgAQCECSwAgDCBBQAQJrAAAMIEFgBAmMACAAjrNLAuLi4awLc6Pz9vAFPSaWBdXl42gG9xdXU1+wBMSaeB5aoT+FbmEWCKBBYwauYRYIo6DazT09MG8C3MI8AUdRpYdW7i7OysAdxGfVHGHAJMUeePaXD1CdzWx48fW9c2NzcbQNrG1tZW69LJyYlvAAG3cnR01ACmaOPu3butSxVX7969awA3URdnfTxLr+uLTGA9bfQxuVRgeegocBN97F7du3evAXRho4/zB7WL9euvvzaA66i46uOi7P79+w2gCxvff/9960Mddq8tf4BlKqz6OnslsICubPQ5wbx+/dqtQuCLarf76dOnrS/OXwFdmd0i7OscwnzyFFnA57x69arX+cEOFtCVjYqrPieZmjyfP3/u0Q3AgoqrPp+bV3Pf9vZ2A+jC7EGjfU8y9W6xn376yU4WMLvYqrg6Pj5ufRJXQJcGCaxSceV2Iay3+u//yZMnvcdV2dnZaQBd+SuwhjjsWZPrjz/+6GnNsIbqdmDtZNeO9hAePHjQALry17sId3d321AqsCq0vNQVVt9812rIs5hDXVQC6+O73/9Qv6iJ7l//+lcbWk18jx49sn0PK6YuoOpZeEPcDvynly9fDnpRCay+vwKr1FXlWHaR6ury4cOHs9ByGBWmqW7/1a3AmlfGNLf89ttvDaBLC4FVE2BF1tjMHyVRn/q1rX0Yp9oJr1uAFVb1GePjWOxeAX1YCKwypl0sgKS6ODs4OHCRBnRu45//Yn9/vwGsojrfKa6APnwSWHXeyZknYNVUWFVgAfRh43P/8sWLF729nxCgD3bngT59NrDqSs9kBKyKvb09B9uBXm186X+orXS3CoGpqwvGx48fN4A+bSz7H90qBKbu559/drAd6N3SwKpJqSILYIrqqIO3QgBD2Pjab6jJyXksYGrq3JW5CxjKVwOr1CRlogKmot76ULcGAYZyrcAqFVh1RQgwZhVXh4eHzo8Cg/rkVTlf8/r16/bu3bsGMDbiChiLa+9gzT179sztQmB06rEy4goYixvvYM3VLlbtZgEMrZ7bVxd/AGNx68Aq5+fn7fnz5+3i4qIB9K12q2pH3TsGgbH5psAqFVdv3rxpx8fHDaAvdUuwntPnIaLAGH1zYM2dnJy0o6Mju1lAp+xaAVMQC6xydXU1O5tVoQWQVo+KqfcK2rUCxi4aWHNuGwJJdTuwdq28gB6Yik4Ca65C6+PHj24dAjdWtwLrNuDu7q4dK2ByOg2svzs7O5ud06qfYgv4nIqqev9pRVU9NNQzrYCp6i2w/q4e71ChVZ/6teCC9VQBVSFVt/7mH4BVMEhg/VMdjq/Qqp+Xl5ezn/X573//24Dpu3v37iym5p+Kqs3NTTtUwMoaRWABAKySG7+LEACA5QQWAECYwAIACBNYAABhAgsAIExgAQCECSwAgDCBBQAQJrAAAMIEFgBAmMACAAgTWAAAYQILACDs/wFrlT4csf6bNQAAAABJRU5ErkJggg=="></image></defs></svg>
+                            </div>
+                            <div class="login-text">
+                                <h2>Enter verification code</h2>
+                                <p>A 6-digit verification code has been sent to <span class="verify-number"></span></p>
+                            </div>
+                            <div class="login-number">
+                                <div class="login-inputs otp-boxes">
+                                    <input type="number" maxlength="1">
+                                    <input type="number" maxlength="1">
+                                    <input type="number" maxlength="1">
+                                    <input type="number" maxlength="1">
+                                </div>
+                            </div>
+                            <div class="login-btn">
+                                <a href="#" class=""><p id="resend-number"></p></a>
+                            </div>
+                            <div class="login-btn otp-btn">
+                                <button class="btn btn-primary verify-btn" disabled>Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="add-location login-popup" id="add-location">
+            <div class="login-container">
+                <div class="add-location-container location-option">
+                    <div class="login-main-container">
+                        <div class="login-cancle-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="login-box location-dialog">
+                            <div class="nav-search-container location-box">
+                                <div class="nav-data">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <div class="search-container">
+                                        <input type="text" class="search-input" placeholder="Search..."/>
+                                        <i class="fa-solid fa-circle-xmark clear-icon"></i>
+                                    </div>
+                                        
+                                </div>
+                                <div class="detail-container">
+                                    <a href="#" class="use-current">
+                                        <i class="fa-solid fa-location-crosshairs"></i>
+                                        
+                                        <h6 class="login-address-heading">Use Current location </h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="recent-locations">
+                                <h5>Recents</h5>
+
+                                <div class="Saved-locations">
+                                    <div class="detail-container">
+                                        <div class="detail-content recent-location">
+                                            <div class="detail-icon">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </div>
+                                            <div class="detail1-container-content address">
+                                                <h6 class="login-address-heading" id="location-heading">JMD MegaPolis </h6>
+                                                <p class="verify-location" id="location-details">Badshahpur Sohna Road highway, sector 48, Gurgaon, Haryana, India.</p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content recent-location">
+                                            <div class="detail-icon">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </div>
+                                            <div class="detail1-container-content address">
+                                                <h6 class="login-address-heading" id="location-heading">JMD MegaPolis </h6>
+                                                <p class="verify-location" id="location-details">Badshahpur Sohna Road highway, sector 48, Gurgaon, Haryana, India.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-location-container slot-option">
+                    <div class="login-main-container">
+                        <div class="login-cancle-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="login-box after-location">
+                            <div>
+                                <h5>When should the professional arrive?</h5>
+                                <p>Service will take approx. 3 hrs & 5 mins</p>
+                            </div>         
+                            
+                            <div class="arrive-date-tab">
+                                <div class="tab" data-target="1">
+                                    <div class="content">
+                                        <p class="day" id="day1">Wed</p>
+                                        <p class="date" id="date1">29</p>
+                                    </div>
+                                </div>
+                                <div class="tab" data-target="2">
+                                    <div class="content">
+                                        <p class="day" id="day2">Thu</p>
+                                        <p class="date" id="date2">30</p>
+                                    </div>
+                                </div>
+                                <div class="tab" data-target="3">
+                                    <div class="content">
+                                        <p class="day" id="day3">Fri</p>
+                                        <p class="date" id="date3">31</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5>Select start time of service</h5>
+
+                            <div class="arrive-timing">
+                                <div class="time-slot">
+                                    <div class="time">
+                                        <p class="time-value">
+                                            7:00 AM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            7:30 AM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            8:00 AM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            8:30 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            9:00 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            9:30 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            10:00 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            10:30 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            11:00 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            11:30 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            12:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            12:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            01:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            01:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            02:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            02:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            03:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            03:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            04:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            04:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            05:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            05:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            06:00 PM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            06:30 PM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            7:00 PM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            7:30 PM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            8:00 PM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="time-slot">
+                                    <div class="time">
+                                        <p class="time-value">
+                                            8:30 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            9:00 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            9:30 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            10:00 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            10:30 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            11:00 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            11:30 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            12:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            12:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            01:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            01:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            02:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            02:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            03:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            03:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            04:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            04:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            05:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            05:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            06:00 PM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            06:30 PM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            7:00 PM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            7:30 PM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            8:00 PM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                </div>
+                                <div class="time-slot">
+                                    <div class="time">
+                                        <p class="time-value">
+                                            8:00 AM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            8:30 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            9:00 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            9:30 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            10:00 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            10:30 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            11:00 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            11:30 AM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            12:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            12:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            01:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            01:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            02:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            02:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            03:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            03:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            04:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            04:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            05:00 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            05:30 PM
+                                        </p>
+                                        <span class="extra-price"></span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            06:00 PM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            06:30 PM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            7:00 PM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            7:30 PM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                    <div class="time">
+                                        <p class="time-value">
+                                            8:00 PM
+                                        </p>
+                                        <span class="extra-price">+ ₹150</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkoutBtn"><button disabled class="btn btn-primary">Proceed to checkout</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-location-container payment-option">
+                    <div class="login-main-container">
+                        <div class="login-cancle-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="login-box payment-box">
+                            <div class="d-flex gap-3 payment-top">
+                                <div class="call-icon">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </div>
+                                <div class="payment-amount">
+                                    <h5>Select payment method</h5>
+                                    <p>Amount to pay : <span class="cart-total-rupees"></span></p>
+                                </div>
+                            </div>        
+                            <div class="payment-methods">
+                                <a href="#">
+                                    <div class="payment-method">
+                                        <h5>Cards</h5>
+                                        <div class="payment-item">
+                                            <div class="payment-item-icon">
+                                                <img src="../assets/payment-gatway/card.webp" alt="">
+                                            </div>
+                                            <p>Add new card</p>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="payment-method">
+                                        <h5>UPI</h5>
+                                        <div class="payment-item">
+                                            <div class="payment-item-icon">
+                                                <img src="../assets/payment-gatway/upi.webp" alt="">
+                                            </div>
+                                            <p>Add a new upi id</p>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="payment-method">
+                                        <h5>Netbanking</h5>
+                                        <div class="payment-item">
+                                            <div class="payment-item-icon">
+                                                <img src="../assets/payment-gatway/netbanking.webp" alt="">
+                                            </div>
+                                            <p>Netbanking</p>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="payment-method">
+                                        <h5>Pay after service</h5>
+                                        <div class="payment-item">
+                                            <div class="payment-item-icon">
+                                                <img src="../assets/payment-gatway/cash.webp" alt="">
+                                            </div>
+                                            <p>Pay with cash after service</p>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

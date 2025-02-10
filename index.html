@@ -1,0 +1,1071 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Salon at home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Components/style.css">
+    <link rel="stylesheet" href="Components/mediaquery.css">
+  </head>
+  <body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/logo.webp" alt="mannubhai"></a>
+            </div>
+            <div class="nav-links">
+                <div class="nav-location-container">
+                    <div class="nav-data location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="location-name">JMD Megapolis, Badshahpur...</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="nav-search-container">
+                    <div class="nav-data">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Search..." onkeyup="filter()"/>
+                            <i class="fa-solid fa-circle-xmark clear-icon" id="clear-icon"></i>
+                        </div>
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="product">
+        <div class="first-banner top-banner">
+            <img src="assets/first-banner.jpg" alt="">
+        </div>
+        <div class="main-container">
+            <div class="Services-column">
+                <div class="service-title">
+                    <h2>Salon at home</h2>
+                    <div class="service-rating">
+                        <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                        <div class="service-rating-text">
+                            <p>4.5 (25k+ Bookings)</p>
+                            <div class="rating-border"></div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="service-container">
+                    <div class="service-heading">
+                        <p>Select a service</p>
+                        <span></span>
+                    </div>
+                    <div class="service-items">
+                        <a href="#our-package" class="service-item">
+                            <div class="service-item-img">
+                                <img src="assets/service-icon/all-packages.webp">
+                            </div>
+                            <p>All Packages</p>
+                        </a>
+                        <a href="#facial" class="service-item">
+                            <div class="service-item-img">
+                                <img src="assets/service-icon/facial.png">
+                            </div>
+                            <p>Facial</p>
+                        </a>
+                        <a href="#cleanup" class="service-item">
+                            <div class="service-item-img">
+                                <img src="assets/service-icon/cleanup.png">
+                            </div>
+                            <p>Cleanup</p>
+                        </a>
+                        <a href="#threading" class="service-item">
+                            <div class="service-item-img">
+                                <img src="assets/service-icon/threading.png">
+                            </div>
+                            <p>Threading</p>
+                        </a>
+                        <a href="#pedicure" class="service-item">
+                            <div class="service-item-img">
+                                <img src="assets/service-icon/pedicure.png">
+                            </div>
+                            <p>Mani/Pedicure</p>
+                        </a>
+                        <a href="#wax" class="service-item">
+                            <div class="service-item-img">
+                                <img src="assets/service-icon/wax.png">
+                            </div>
+                            <p>Wax</p>
+                        </a>
+                        <a href="#ayurvedic" class="service-item">
+                            <div class="service-item-img">
+                                <img src="assets/service-icon/ayurvedic-facial.png">
+                            </div>
+                            <p>Ayurvedic Facial</p>
+                        </a>
+                        <a href="#korean" class="service-item">
+                            <div class="service-item-img">
+                                <img src="assets/service-icon/korean-facial.png">
+                            </div>
+                            <p>Korean</p>
+                        </a>
+                        <a href="#haircare" class="service-item">
+                            <div class="service-item-img">
+                                <img src="assets/service-icon/hair-care.png">
+                            </div>
+                            <p>Hair care</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="second-column">
+                <div class="first-banner">
+                    <img src="assets/first-banner.jpg" alt="">
+                </div>
+                
+                <div class="second-main-column">
+                    <div class="pkgs-container">
+                        <div class="our-package" id="our-package">
+                            <h3 class="pkg-main-heading">Packages</h3>
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete chocolate roll-on waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹499 </p>
+                                        <p> ₹599 </p>
+                                    </div>
+                                    <div class="rating-border pkg-border"></div>
+                                    <p class="pkg-description"><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs.</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container second-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete honey waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹696 </p>
+                                        <p> ₹899 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <ul class="pkg-description">
+                                        <li><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs (no bikini, no brazilian)</li>
+                                        <li><b>Facial hair removal:</b> Eyebrow, Upper lip</li>
+                                    </ul>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-service-img">
+                                        <img src="assets/service-icon/wax.png" alt="">
+                                    </div>
+                                    <div class="pkg-btn pkg-img-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Wax & Glow</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border pkg-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹1099 </p>
+                                        <p> ₹1299 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <p class="pkg-description"><b>Facial:</b> Glovite lightening facial</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="our-package" id="facial">
+                            <h3 class="pkg-main-heading">Facial</h3>
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Aroma Magic instant glow facial</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (5k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹999 </p>
+                                        <p> ₹1299 </p>
+                                    </div>
+                                    <div class="rating-border pkg-border"></div>
+                                    <ul class="pkg-description">
+                                        <li>Brighten and reveals a vibrant complexion.</li>
+                                        <li>Includes ultrasonic spatula cleaning & 15-min shoulders and legs message</li>
+                                    </ul> 
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-service-img">
+                                        <img src="assets/service-icon/facial.png" alt="">
+                                    </div>
+                                    <div class="pkg-btn pkg-img-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container second-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete honey waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹696 </p>
+                                        <p> ₹899 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <ul class="pkg-description">
+                                        <li><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs (no bikini, no brazilian)</li>
+                                        <li><b>Facial hair removal:</b> Eyebrow, Upper lip</li>
+                                    </ul>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Wax & Glow</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border pkg-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹1099 </p>
+                                        <p> ₹1299 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <p class="pkg-description"><b>Facial:</b> Glovite lightening facial</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="our-package" id="cleanup">
+                            <h3 class="pkg-main-heading">Cleanup</h3>
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete chocolate roll-on waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹499 </p>
+                                        <p> ₹599 </p>
+                                    </div>
+                                    <div class="rating-border pkg-border"></div>
+                                    <p class="pkg-description"><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs.</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container second-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete honey waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹696 </p>
+                                        <p> ₹899 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <ul class="pkg-description">
+                                        <li><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs (no bikini, no brazilian)</li>
+                                        <li><b>Facial hair removal:</b> Eyebrow, Upper lip</li>
+                                    </ul>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Wax & Glow</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border pkg-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹1099 </p>
+                                        <p> ₹1299 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <p class="pkg-description"><b>Facial:</b> Glovite lightening facial</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="our-package" id="threading">
+                            <h3 class="pkg-main-heading">Threading</h3>
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete chocolate roll-on waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹499 </p>
+                                        <p> ₹599 </p>
+                                    </div>
+                                    <div class="rating-border pkg-border"></div>
+                                    <p class="pkg-description"><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs.</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container second-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete honey waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹696 </p>
+                                        <p> ₹899 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <ul class="pkg-description">
+                                        <li><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs (no bikini, no brazilian)</li>
+                                        <li><b>Facial hair removal:</b> Eyebrow, Upper lip</li>
+                                    </ul>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Wax & Glow</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border pkg-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹1099 </p>
+                                        <p> ₹1299 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <p class="pkg-description"><b>Facial:</b> Glovite lightening facial</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="our-package" id="pedicure">
+                            <h3 class="pkg-main-heading">Mani/Pedicure</h3>
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete chocolate roll-on waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹499 </p>
+                                        <p> ₹599 </p>
+                                    </div>
+                                    <div class="rating-border pkg-border"></div>
+                                    <p class="pkg-description"><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs.</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container second-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete honey waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹696 </p>
+                                        <p> ₹899 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <ul class="pkg-description">
+                                        <li><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs (no bikini, no brazilian)</li>
+                                        <li><b>Facial hair removal:</b> Eyebrow, Upper lip</li>
+                                    </ul>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Wax & Glow</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border pkg-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹1099 </p>
+                                        <p> ₹1299 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <p class="pkg-description"><b>Facial:</b> Glovite lightening facial</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="our-package" id="wax">
+                            <h3 class="pkg-main-heading">Wax</h3>
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete chocolate roll-on waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹499 </p>
+                                        <p> ₹599 </p>
+                                    </div>
+                                    <div class="rating-border pkg-border"></div>
+                                    <p class="pkg-description"><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs.</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container second-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete honey waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹696 </p>
+                                        <p> ₹899 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <ul class="pkg-description">
+                                        <li><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs (no bikini, no brazilian)</li>
+                                        <li><b>Facial hair removal:</b> Eyebrow, Upper lip</li>
+                                    </ul>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Wax & Glow</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border pkg-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹1099 </p>
+                                        <p> ₹1299 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <p class="pkg-description"><b>Facial:</b> Glovite lightening facial</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="our-package" id="ayurvedic">
+                            <h3 class="pkg-main-heading">Ayurvedic Facial</h3>
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete chocolate roll-on waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹499 </p>
+                                        <p> ₹599 </p>
+                                    </div>
+                                    <div class="rating-border pkg-border"></div>
+                                    <p class="pkg-description"><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs.</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container second-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete honey waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹696 </p>
+                                        <p> ₹899 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <ul class="pkg-description">
+                                        <li><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs (no bikini, no brazilian)</li>
+                                        <li><b>Facial hair removal:</b> Eyebrow, Upper lip</li>
+                                    </ul>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Wax & Glow</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border pkg-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹1099 </p>
+                                        <p> ₹1299 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <p class="pkg-description"><b>Facial:</b> Glovite lightening facial</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="our-package" id="korean">
+                            <h3 class="pkg-main-heading">Korean</h3>
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete chocolate roll-on waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹499 </p>
+                                        <p> ₹599 </p>
+                                    </div>
+                                    <div class="rating-border pkg-border"></div>
+                                    <p class="pkg-description"><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs.</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container second-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete honey waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹696 </p>
+                                        <p> ₹899 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <ul class="pkg-description">
+                                        <li><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs (no bikini, no brazilian)</li>
+                                        <li><b>Facial hair removal:</b> Eyebrow, Upper lip</li>
+                                    </ul>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Wax & Glow</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border pkg-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹1099 </p>
+                                        <p> ₹1299 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <p class="pkg-description"><b>Facial:</b> Glovite lightening facial</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="our-package" id="haircare">
+                            <h3 class="pkg-main-heading">Hair Care</h3>
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete chocolate roll-on waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹499 </p>
+                                        <p> ₹599 </p>
+                                    </div>
+                                    <div class="rating-border pkg-border"></div>
+                                    <p class="pkg-description"><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs.</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container second-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Complete honey waxing</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹696 </p>
+                                        <p> ₹899 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <ul class="pkg-description">
+                                        <li><b>Roll-on waxing:</b> Chocolate full arms, underarms, full legs (no bikini, no brazilian)</li>
+                                        <li><b>Facial hair removal:</b> Eyebrow, Upper lip</li>
+                                    </ul>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pkg-container first-pkg-type">
+                                <div class="pkg-container-content">
+                                    <div class="pkg-icon">
+                                        <i class="fa-solid fa-box"></i> PACKAGE
+                                    </div>
+                                    <h5 class="pkg-title">Wax & Glow</h5>
+                                    <div class="pkg-rating">
+                                        <div class="service-rating service-rating-pkg">
+                                            <span><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.333 10a8.333 8.333 0 11-16.667 0 8.333 8.333 0 0116.667 0zm-7.894-4.694A.476.476 0 009.999 5a.476.476 0 00-.438.306L8.414 8.191l-2.977.25a.48.48 0 00-.414.342.513.513 0 00.143.532l2.268 2.033-.693 3.039a.51.51 0 00.183.518.458.458 0 00.528.022L10 13.298l2.548 1.629a.458.458 0 00.527-.022.51.51 0 00.184-.518l-.693-3.04 2.268-2.032a.513.513 0 00.143-.532.48.48 0 00-.415-.342l-2.976-.25-1.147-2.885z" fill="#572AC8"></path></svg></span>
+                                            <div class="service-rating-text">
+                                                <p>4.5 (25k+ Bookings)</p>
+                                                <div class="rating-border pkg-border"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="pkg-price">
+                                        <p class="pkg-main-price"> ₹1099 </p>
+                                        <p> ₹1299 </p>
+                                    </div>
+                                    <div class="pkg-border rating-border"></div>
+                                    <p class="pkg-description"><b>Facial:</b> Glovite lightening facial</p>
+                                </div>
+                                <div class="pkg-container-img">
+                                    <div class="pkg-btn">Add</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-container">
+                        <div class="cart-container-items">
+                            <div class="cart-item" id="no-items">
+                                <div class="cart-svg">
+                                    <svg width="100%" height="100%" viewBox="0 0 128 96" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M77.5 34a.5.5 0 01-.5.5h-2.5V30a.5.5 0 011 0v3.5H77a.5.5 0 01.5.5z" fill="#FFD47F"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M79.5 34a.5.5 0 01-.5.5h-2.5V30a.5.5 0 011 0v3.5H79a.5.5 0 01.5.5z" fill="#FFD47F"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M73 69a1 1 0 011 1v1H61a1 1 0 00-1 1v7h-2v-7a3 3 0 013-3h12zm3 2h9a1 1 0 011 1v7h2v-7a3 3 0 00-3-3h-9.17c.11.313.17.65.17 1v1z" fill="#E2E2E2"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M60 60v10h-2V60h2z" fill="#E2E2E2"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M72 72a1 1 0 00-1-1H47a1 1 0 00-1 1v7h-2v-7a3 3 0 013-3h24a3 3 0 013 3v7h-2v-7z" fill="#E2E2E2"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M74 70v9h-2v-9h2z" fill="#E2E2E2"></path><path d="M50 79a5 5 0 11-10 0 5 5 0 0110 0zM64 79a5 5 0 11-10 0 5 5 0 0110 0zM78 79a5 5 0 11-10 0 5 5 0 0110 0zM92 79a5 5 0 11-10 0 5 5 0 0110 0z" fill="#757575"></path><path d="M48 79a3 3 0 11-6 0 3 3 0 016 0zM62 79a3 3 0 11-6 0 3 3 0 016 0zM76 79a3 3 0 11-6 0 3 3 0 016 0zM90 79a3 3 0 11-6 0 3 3 0 016 0z" fill="#EEE"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M74 60v10h-2V60h2z" fill="#E2E2E2"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M30.832 25.445l8 12-1.664 1.11-8-12 1.664-1.11zm16 0l8 12-1.664 1.11-8-12 1.664-1.11z" fill="#CBCBCB"></path><path d="M44 34h52l-5.694 30.369A2 2 0 0188.34 66H53.32a4 4 0 01-3.932-3.263L44 34z" fill="#CBCBCB"></path><path d="M34 34h48l-6 32H41.66a2 2 0 01-1.966-1.631L34 34z" fill="#E2E2E2"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M46 40h-2v7.059h2V40zm0 12.941h-2V60h2v-7.059zM50 40h2v7.059h-2V40zm2 12.941h-2V60h2v-7.059zM56 40h2v7.059h-2V40zm2 12.941h-2V60h2v-7.059zM62 40h2v7.059h-2V40zm2 12.941h-2V60h2v-7.059zM68 40h2v7.059h-2V40zm2 12.941h-2V60h2v-7.059z" fill="#fff"></path><path d="M24 24h28v4H24v-4z" fill="#97674E"></path><path d="M78 20h6v4a6 6 0 01-6 6V20zM78 15a3 3 0 116 0v5h-6v-5zM78 30V18L66 30h12z" fill="#997BED"></path><path d="M88 16l-4-1v2l4-1z" fill="#FFD47F"></path><path d="M81 15a1 1 0 112 0 1 1 0 01-2 0z" fill="#0F0F0F"></path><path d="M72 30h-6l12-12v6a6 6 0 01-6 6z" fill="#6E42E5"></path></svg>
+                                </div>
+                                <p class="cart-text">No items in your cart</p>
+                            </div>
+
+                            <div class="cart-item cart-show" id="show">
+                                <h5 class="cart-heading text-left">Cart</h5>
+
+                                <div class="cart-details">
+                                    <!-- <div class="cart-detail">
+                                        <h6 class="cart-detail-heading">Complete Chocolate natural package</h6>
+                                        <div class="cart-detail-quantity">
+                                            <span id="increment">-</span>
+                                            <span class="number">1</span>
+                                            <span id="decrement">+</span>
+                                        </div>
+                                        <p class="cart-detail-price text-center">400</p>
+                                    </div> -->
+                                    
+                                </div>
+
+                                <div class="cart-total-price">
+                                    <a href="Components/cart.html">
+                                        <div class="cart-total-heading">View in cart</div>
+                                        <div class="cart-total-rupees"> 00</div>
+                                    </a>
+                                </div>
+                                
+                            </div>
+
+                            <div class="cart-item">
+                                <div class="cart-assurity">
+                                    <div class="cart-assurity-text">
+                                        <h5>MB Promise</h5>
+                                        <div class="cart-assurity-text-p">
+                                            <i class="fa-solid fa-check"></i>
+                                            <p>4.5+ Rated Beauticians</p>
+                                        </div>
+                                        <div class="cart-assurity-text-p">
+                                            <i class="fa-solid fa-check"></i>
+                                            <p>Luxury Salon Experience</p>
+                                        </div>
+                                        <div class="cart-assurity-text-p">
+                                            <i class="fa-solid fa-check"></i>
+                                            <p>Premium Branded Products</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-assurity-img">
+                                        <img src="assets/mb-promise-img.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup-service-section">
+        <div class="service-section-popup">
+            <div class="service-popup">
+                <div class="service-items">
+                    <a href="#our-package" class="service-item">
+                        <div class="service-item-img">
+                            <img src="assets/service-icon/all-packages.webp">
+                        </div>
+                        <p>All Packages</p>
+                    </a>
+                    <a href="#facial" class="service-item">
+                        <div class="service-item-img">
+                            <img src="assets/service-icon/facial.png">
+                        </div>
+                        <p>Facial</p>
+                    </a>
+                    <a href="#cleanup" class="service-item">
+                        <div class="service-item-img">
+                            <img src="assets/service-icon/cleanup.png">
+                        </div>
+                        <p>Cleanup</p>
+                    </a>
+                    <a href="#threading" class="service-item">
+                        <div class="service-item-img">
+                            <img src="assets/service-icon/threading.png">
+                        </div>
+                        <p>Threading</p>
+                    </a>
+                    <a href="#pedicure" class="service-item">
+                        <div class="service-item-img">
+                            <img src="assets/service-icon/pedicure.png">
+                        </div>
+                        <p>Mani/Pedicure</p>
+                    </a>
+                    <a href="#wax" class="service-item">
+                        <div class="service-item-img">
+                            <img src="assets/service-icon/wax.png">
+                        </div>
+                        <p>Wax</p>
+                    </a>
+                    <a href="#ayurvedic" class="service-item">
+                        <div class="service-item-img">
+                            <img src="assets/service-icon/ayurvedic-facial.png">
+                        </div>
+                        <p>Ayurvedic Facial</p>
+                    </a>
+                    <a href="#korean" class="service-item">
+                        <div class="service-item-img">
+                            <img src="assets/service-icon/korean-facial.png">
+                        </div>
+                        <p>Korean</p>
+                    </a>
+                    <a href="#haircare" class="service-item">
+                        <div class="service-item-img">
+                            <img src="assets/service-icon/hair-care.png">
+                        </div>
+                        <p>Hair care</p>
+                    </a>
+                </div>
+                <div class="popup-menu cancleBtn">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="service-popupBtn">
+        <div class="popup-menu menuBtn">
+            <i class="fa-solid fa-bars"></i> Menu
+        </div>        
+    </div>
+
+    <div class="mobile-view-cart">
+        <div class="cart-total-price">
+            <a href="Components/cart.html">
+                <div class="cart-total-heading">View in cart</div>
+                <div class="cart-total-rupees"> 00</div>
+            </a>
+        </div>
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="Components/script.js"></script>
+    <!-- <script src="Components/cart.js"></script> -->
+  </body>
+</html>
